@@ -1,1 +1,1 @@
-SELECT FROM film WHERE date_sortie = MONTH(06)
+SELECT * FROM film WHERE date_sortie = MONTH(06)
