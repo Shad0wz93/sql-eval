@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `commentaire` (
 --
 
 INSERT INTO `commentaire` (`id`, `id_film`, `id_user`, `note`, `commentaire`) VALUES
-(1, 43, 52, 3, "j'ai souri mais pas ri"),
+(1, 43, 52, 3, "j\'ai souri mais pas ri"),
 (2, 35, 53, 3, 'peut mieux faire'),
 (3, 36, 54, 2, 'bienn'),
 (4, 35, 54, 5, 'Genial'),
@@ -113,14 +113,14 @@ INSERT INTO `film` (`id`, `titre`, `slug`, `image`, `prix`, `description`, `date
 DROP TABLE IF EXISTS `films_categs`;
 CREATE TABLE IF NOT EXISTS `films_categs` (
   `id_film` int NOT NULL,
-  `id_categorie` int NOT NULL,
+  `id_categorie` int NOT NULL
 ) ENGINE=MyISAM AUTO_INCREMENT=55 DEFAULT CHARSET=utf8mb3;
 
 --
 -- Déchargement des données de la table `films_categs`
 --
 
-INSERT INTO `films_categs` (`id_film` `id_categorie`) VALUES
+INSERT INTO `films_categs` (`id_film`,`id_categorie`) VALUES
 (43, 51),
 (35, 35),
 (35, 52),
