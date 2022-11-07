@@ -1,0 +1,1 @@
+SELECT AVG(note) FROM commentaire
